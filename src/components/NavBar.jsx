@@ -41,14 +41,12 @@ export default  function NavBar (){
   
     return (
       <div
-        className="flex justify-between items-center w-full h-20 px-5 z-10
-       text-day bg-midnight fixed"
+        className="flex justify-between items-center w-full h-10 px-5 z-10
+        text-[#658262] bg-[#ffff] fixed"
       >
-        <div>
-          <h1 className="text-5xl font-signature ml-2">Amol</h1>
-        </div>
+        
   
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex ">
           {links.map(({ id, link }) => (
             <li
               className="px-4 cursor-pointer capitalize font-medium
