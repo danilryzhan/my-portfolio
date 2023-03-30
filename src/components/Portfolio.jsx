@@ -62,9 +62,9 @@ const Portfolio = () => {
   return (
     <div className='bg-about-background bg-fixed bg-no-repeat bg-cover	'>
     <div
-      name="Portfolio"
+      name='Portfolio'
       data-aos="fade-up"
-      className="w-full text-white md:h-auto backdrop-blur-md"
+      className="w-full text-white md:h-screen backdrop-blur-md"
     >
       <div
         className="max-w-screen-lg p-4 mx-auto flex flex-col 
