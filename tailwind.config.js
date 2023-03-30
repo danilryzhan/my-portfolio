@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:  {
-        'home-background': "url('/public/1f736040a3868b98c8c4fb9146a7b955.gif')",
-        'about-background': "url('/public/25cff3f5430c7e67a83823bfbc43f86a.gif')",
+        'home-background': "url('/public/2f10ce69b96c0611989308b0abc68e70.gif')",
+        'about-background': "url('/public/2f10ce69b96c0611989308b0abc68e70.gif')",
+        'experience-background': "url('/public/745cc90fcc688569610f84bc5d2b2fd6.gif')",
         'footer-texture': "url('/img/footer-texture.png')",
         
       },
