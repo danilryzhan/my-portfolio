@@ -60,18 +60,19 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className='bg-about-background bg-fixed bg-no-repeat bg-cover	'>
+    <div className='bg-portfolio-background bg-fixed bg-no-repeat bg-cover	'>
     <div
       name='Portfolio'
-      data-aos="fade-up"
-      className="w-full text-white md:h-screen backdrop-blur-md"
+     
+      className=" text-[#60438b] opacity-75 w-full text-white md:h-screen backdrop-blur-md"
     >
-      <div
-        className="max-w-screen-lg p-4 mx-auto flex flex-col 
+      <div data-aos="fade-up"
+        className="   max-w-screen-lg p-4 mx-auto flex flex-col 
       justify-center w-full h-full"
       >
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+        <div className=" p-5 text-center rounded-md shadow-md bg-form-bg">
+        <div className=" pb-8">
+          <p className=" text-4xl md:text-9xl font-bold  inline  border-gray-500">
             Projects
           </p>
           <p className="py-4">Check out some of my work here</p>
@@ -82,7 +83,7 @@ const Portfolio = () => {
         px-12 sm:px-0"
         >
           {projects.map(({ src, id, live, code }) => (
-            <div className="shadow-md shadow-gray-600 rounded-lg" key={id}>
+            <div className=" border-2 shadow-md shadow-gray-600 rounded-lg" key={id}>
               <img
                 src={src}
                 alt="covid-landing-project"
@@ -104,6 +105,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </div>
   </div>

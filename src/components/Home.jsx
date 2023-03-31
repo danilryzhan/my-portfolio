@@ -6,13 +6,13 @@ import { Link } from "react-scroll";
 
 export default function NavBar() {
   return (
-    <div   name='Home' className="md:h-screen   h-auto bg-about-background bg-fixed bg-no-repeat bg-cover hide-mobile	">
-      <div className="  backdrop-blur-md  ">
-        <div class="max-w-4xl flex  justify-center  items-center h-screen flex-wrap mx-auto   lg:my-0">
+    <div   name='Home' className="bg-about-background bg-fixed bg-no-repeat bg-cover hide-mobile	">
+      <div className="md:h-screen  h-screen  backdrop-blur-md  ">
+        <div class="max-w-4xl flex   items-center h-auto lg:h-screen flex-wrap mx-auto   lg:my-0">
           <div
           
             id="profile"
-            class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl  opacity-75 mx-6 mx-0"
+            class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl  opacity-75 mx-6 lg:mx-0"
           >
             <div class=" bg-day p-4 md:p-12 text-center lg:text-left">
               <div className="" >

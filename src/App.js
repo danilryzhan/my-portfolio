@@ -5,7 +5,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Skills from "./components/Skills";
-import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 import ScrollSpy from "react-ui-scrollspy";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <NavBar />
       <SocialLinks />
       <Skills />
-      <Experience />
+      <Contact />
     </div>
   );
 }

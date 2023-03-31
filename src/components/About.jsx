@@ -13,7 +13,7 @@ export default function About() {
     <div
       name="About"
       className="  shadow-4xl w-full md:h-screen 
-       text-white px-4 bg-[#fcecb2] "
+       text-white text-center text-[#60438b] px-4 bg-[#fcecb2] "
     >
       <div
         className="max-w-screen-lg  mx-auto flex flex-col 
@@ -21,11 +21,11 @@ export default function About() {
         data-aos="fade-up"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="text-4xl md:text-9xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-4xl mt-20">
           Hey, There I'm Amol Shelke I'm a Front-End Developer.I'm a second year
           undergraduated student currently pursuing BCA from RTMNU Nagpur
           university. I have 1 year of experince building delightful websites

@@ -13,7 +13,7 @@ import { useState } from "react";
 
 const NavBar = () => {
   const [nav, setNav] = React.useState(false);
-  const [width, setWidth] = useState (window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -46,7 +46,7 @@ const NavBar = () => {
       id: 2,
       child: (
         <>
-          <FaNewspaper size={30} /> Github
+          <FaNewspaper size={30} /> About
         </>
       ),
 
@@ -89,71 +89,73 @@ const NavBar = () => {
     },
   ];
 
-  if(isMobile)return(<div
-    className="flex top-0 justify-between items-center w-full h-20 px-5 z-10
+  if (isMobile)
+    return (
+      <div
+        className="  flex top-0 justify-between items-center w-full h-20 px-5 z-10
    text-white  fixed"
-  >
-    <div
-      className=" cursor-pointer pr-4 z-10 text-gray-500 "
-      onClick={() => setNav(!nav)}
-    >
-      {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-    </div>
+      >
+        <div class="bg-[#fcecb2]  align-middle text-white font-bold py-2 px-4 rounded-full">
+          <div
+            className=" cursor-pointer  z-10 text-gray-500 "
+            onClick={() => setNav(!nav)}
+          >
+            {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          </div>
 
-    {nav && (
-      <ul
-        className="flex flex-col justify-center items-center 
+          {nav && (
+            <ul
+              className="flex flex-col justify-center items-center 
       absolute top-0 left-0 w-full h-screen bg-gradient-to-b
        bg-primary bg-opacity-90"
-      >
-        {links.map(({ id, link }) => (
-          <li
-            className=" px-4 cursor-pointer capitalize py-6
+            >
+              {links.map(({ id, link }) => (
+                <li
+                  className=" px-4 cursor-pointer capitalize py-6
           text-4xl"
+                  key={id}
+                >
+                  <Link
+                    onClick={() => setNav(!nav)}
+                    to={link}
+                    smooth
+                    duration={500}
+                  >
+                    {link}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    );
+
+  return (
+    <div className="flex-col top-[35%] right-0 fixed hidden lg:flex r">
+      <ul >
+        {links.map(({ id, child, link, style, download }) => (
+          <li
             key={id}
+            className={
+              "flex justify-between  items-center w-40 h-14 px-4 mr-[-100px] hover:rounded-md hover:ml-[-90px] duration-300 bg-[#fcdc6c]" +
+              " " +
+              style
+            }
           >
             <Link
-              onClick={() => setNav(!nav)}
+              className=" cursor-pointer flex justify-between items-center 
+            w-full text-white"
               to={link}
               smooth
               duration={500}
             >
-              {link}
+              {child}
             </Link>
           </li>
         ))}
       </ul>
-    )}
-  </div>)
-
-  return (
-   
-        <div className="flex-col top-[35%] right-0 fixed hidden lg:flex">
-          <ul>
-            {links.map(({ id, child, link, style, download }) => (
-              <li
-                key={id}
-                className={
-                  "flex justify-between items-center w-40 h-14 px-4 mr-[-100px] hover:rounded-md hover:ml-[-90px] duration-300 bg-[#fcdc6c]" +
-                  " " +
-                  style
-                }
-              >
-                <Link
-                  className=" cursor-pointer flex justify-between items-center 
-            w-full text-white"
-                  to={link}
-                  smooth
-                  duration={500}
-                >
-                  {child}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      
-     
+    </div>
   );
 };
 
