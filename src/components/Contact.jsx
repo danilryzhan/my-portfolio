@@ -12,14 +12,14 @@ const Contact = () => {
     <div className="bg-fixed bg-no-repeat bg-cover bg-experience-background">
     <div
       name="Contact"
-      data-aos="fade-up"
+     
       className="  backdrop-blur-md w-full h-screen text-white"
     >
       <div
         className="flex flex-col p-4 justify-center
        max-w-screen-lg h-full mx-auto"
       >
-        <div className="pb-8">
+        <div  data-aos="fade-up"className="pb-8">
           <p
             className="text-4xl font-bold border-b-4 border-gray-500
            pb-2 inline"

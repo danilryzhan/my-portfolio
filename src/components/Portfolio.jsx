@@ -60,55 +60,58 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className='bg-portfolio-background bg-fixed bg-no-repeat bg-cover	'>
-    <div
-      name='Portfolio'
-     
-      className=" text-[#60438b] opacity-75 w-full text-white md:h-screen backdrop-blur-md"
-    >
-      <div data-aos="fade-up"
-        className="   max-w-screen-lg p-4 mx-auto flex flex-col 
-      justify-center w-full h-full"
+    <div className="bg-portfolio-background bg-fixed bg-no-repeat bg-cover  	">
+      <div
+        name="Portfolio"
+        className="   w-full text-white md:h-screen backdrop-blur-md"
       >
-        <div className=" p-5 text-center rounded-md shadow-md bg-form-bg">
-        <div className=" pb-8">
-          <p className=" text-4xl md:text-9xl font-bold  inline  border-gray-500">
-            Projects
-          </p>
-          <p className="py-4">Check out some of my work here</p>
-        </div>
-
         <div
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 
-        px-12 sm:px-0"
+          
+          className=" text-[#60438b]  max-w-screen-lg mb:p-4 mx-auto flex flex-col 
+      justify-center w-full h-full"
         >
-          {projects.map(({ src, id, live, code }) => (
-            <div className=" border-2 shadow-md shadow-gray-600 rounded-lg" key={id}>
-              <img
-                src={src}
-                alt="covid-landing-project"
-                className="rounded-md duration-200 hover:scale-105"
-              />
-
-              <div className="flex items-center justify-center">
-                <a href={live} target="_blank" rel="noreferrer">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Demo
-                  </button>
-                </a>
-                <a href={code} target="_blank" rel="noreferrer">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Code
-                  </button>
-                </a>
-              </div>
+          <div data-aos="fade-up" className=" p-5  rounded-md shadow-md bg-form-bg">
+            <div className=" text-center pb-8">
+              <p className="  text-4xl md:text-9xl pt-4  font-bold flex items-center justify-center">
+                Projects
+              </p>
+              <p className=" py-4">Check out some of my work here</p>
             </div>
-          ))}
+
+            <div
+              className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 
+        px-12 sm:px-0"
+            >
+              {projects.map(({ src, id, live, code }) => (
+                <div
+                  className=" bg-card-bg  border-2 shadow-md shadow-gray-600 rounded-lg"
+                  key={id}
+                >
+                  <img
+                    src={src}
+                    alt="covid-landing-project"
+                    className=" rounded-md duration-200 hover:scale-105"
+                  />
+
+                  <div className="flex items-center justify-center">
+                    <a href={live} target="_blank" rel="noreferrer">
+                      <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                        Demo
+                      </button>
+                    </a>
+                    <a href={code} target="_blank" rel="noreferrer">
+                      <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
-  </div>
   );
 };
 

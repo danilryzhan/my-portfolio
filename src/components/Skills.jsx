@@ -9,7 +9,7 @@ import github from "../assets/github.png";
 import javascript from "../assets/javascript.png";
 import reactIcon from "../assets/react.png";
 import nextjsIcon from "../assets/nextjs.png";
-import nodeIcon from "../assets/node.png";
+import dotnet from "../assets/dotnet.png";
 import tailwindIcon from "../assets/tailwind.png";
 
 const Skills = () => {
@@ -20,9 +20,9 @@ const Skills = () => {
   const skills = [
     {
       id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
+      src: dotnet,
+      title: ".Net",
+      style: "shadow-green-500",
     },
 
     {
@@ -61,10 +61,11 @@ const Skills = () => {
     },
 
     {
+      
       id: 7,
-      src: nodeIcon,
-      title: "Node",
-      style: "shadow-green-500",
+      src: html,
+      title: "HTML",
+      style: "shadow-orange-500",
     },
 
     {
@@ -90,12 +91,12 @@ const Skills = () => {
     >
       <div
        data-aos="fade-up"
-        className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center
+        className=" text-[#60438b] max-w-screen-lg mx-auto p-4 flex flex-col justify-center
        w-full h-full text-white"
       >
-        <div>
+        <div className=" text-center pb-8">
           <p
-            className="text-4xl font-bold border-b-4 border-gray-500 
+            className=" text-4xl md:text-9xl  font-bold border-b-4 border-gray-500 
           p-2 inline"
           >
             Skills

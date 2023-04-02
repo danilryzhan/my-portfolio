@@ -95,20 +95,18 @@ const NavBar = () => {
         className="  flex top-0 justify-between items-center w-full h-20 px-5 z-10
    text-white  fixed"
       >
-        <div class="bg-[#fcecb2]  align-middle text-white font-bold py-2 px-4 rounded-full">
+        <div class=" z-10 bg-[#fcdc6c]  align-middle text-white font-bold py-2 px-4 rounded-full">
           <div
             className=" cursor-pointer  z-10 text-gray-500 "
             onClick={() => setNav(!nav)}
           >
             {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
-
+      </div>
           {nav && (
-            <ul
-              className="flex flex-col justify-center items-center 
-      absolute top-0 left-0 w-full h-screen bg-gradient-to-b
-       bg-primary bg-opacity-90"
-            >
+            <ul className=" bg-primary  flex flex-col justify-center items-center 
+      absolute top-0 left-0 w-full h-screen 
+        bg-opacity-90">
               {links.map(({ id, link }) => (
                 <li
                   className=" px-4 cursor-pointer capitalize py-6
@@ -123,11 +121,14 @@ const NavBar = () => {
                   >
                     {link}
                   </Link>
+                  
                 </li>
               ))}
             </ul>
+             
           )}
-        </div>
+          
+        
       </div>
     );
 
@@ -138,7 +139,7 @@ const NavBar = () => {
           <li
             key={id}
             className={
-              "flex justify-between  items-center w-40 h-14 px-4 mr-[-100px] hover:rounded-md hover:ml-[-90px] duration-300 bg-[#fcdc6c]" +
+              "flex justify-between items-center w-40 h-14 px-4 mr-[-100px] hover:rounded-md hover:ml-[-90px] duration-300 bg-[#fcdc6c]" +
               " " +
               style
             }

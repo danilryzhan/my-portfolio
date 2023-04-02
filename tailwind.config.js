@@ -18,7 +18,8 @@ module.exports = {
         'day': '#f8f1db',
         'midnight': '#3f5aaf',
         'light-red':'#fcf2f2',
-        'form-bg':'rgb(248 241 219 / 1)',
+        'form-bg':'rgb(248 ,241, 219 ,0.75)',
+        'card-bg':'rgb(248 ,241, 219 ,0.75)',
        })
     },
   
