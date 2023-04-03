@@ -13,15 +13,16 @@ const Contact = () => {
     <div
       name="Contact"
      
-      className="  backdrop-blur-md w-full h-screen text-white"
+      className="backdrop-blur-md w-full h-screen"
     >
-      <div
+      <div data-aos="fade-up"
         className="flex flex-col p-4 justify-center
        max-w-screen-lg h-full mx-auto"
       >
-        <div  data-aos="fade-up"className="pb-8">
+        <div className="text-[#46424b] bg-form-bg p-5  rounded-md shadow-md  " >
+        <div  className="text-center pb-8">
           <p
-            className="text-4xl font-bold border-b-4 border-gray-500
+            className="text-[#60438b] text-4xl md:text-9xl font-bold 
            pb-2 inline"
           >
             Contact
@@ -31,7 +32,7 @@ const Contact = () => {
 
         <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/79989f31-3d89-438f-b1bd-b5861e6901c1"
+            action="https://getform.io/f/46fc97c1-bcfe-4c0c-8e85-93fd72a8e23b"
             method="POST"
             className="flex flex-col w-full md:w-1/2"
           >
@@ -62,13 +63,13 @@ const Contact = () => {
             ></textarea>
 
             <button
-              className="text-white bg-gradient-to-b
-             from-cyan-500 to-blue-500 px-6 py-3 mx-auto my-8 flex 
+              className=" border-2 px-6 py-3 mx-auto my-8 flex 
              items-center rounded-md hover:scale-105 duration-300"
             >
               Let's talk
             </button>
           </form>
+        </div>
         </div>
       </div>
     </div>

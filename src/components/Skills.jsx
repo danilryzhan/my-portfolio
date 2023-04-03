@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import git from "../assets/git.png";
-import github from "../assets/github.png";
+import csharp from "../assets/c-sharp-c.svg";
 import javascript from "../assets/javascript.png";
 import reactIcon from "../assets/react.png";
-import nextjsIcon from "../assets/nextjs.png";
+import sqlserver from "../assets/sql-server.png";
 import dotnet from "../assets/dotnet.png";
 import tailwindIcon from "../assets/tailwind.png";
 
@@ -26,10 +26,16 @@ const Skills = () => {
     },
 
     {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
+      id: 4,
+      src: reactIcon,
+      title: "React JS",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 8,
+      src: csharp,
+      title: "C#",
+      style: "shadow-gray-400",
     },
 
     {
@@ -37,13 +43,6 @@ const Skills = () => {
       src: javascript,
       title: "JavaScript",
       style: "shadow-yellow-500",
-    },
-
-    {
-      id: 4,
-      src: reactIcon,
-      title: "React JS",
-      style: "shadow-blue-600",
     },
 
     {
@@ -55,24 +54,22 @@ const Skills = () => {
 
     {
       id: 6,
-      src: nextjsIcon,
-      title: "Next JS",
+      src: sqlserver,
+      title: "SQL",
       style: "shadow-white",
     },
 
     {
-      
       id: 7,
       src: html,
       title: "HTML",
       style: "shadow-orange-500",
     },
-
     {
-      id: 8,
-      src: github,
-      title: "Github",
-      style: "shadow-gray-400",
+      id: 2,
+      src: css,
+      title: "CSS",
+      style: "shadow-blue-500",
     },
 
     {
@@ -84,24 +81,15 @@ const Skills = () => {
   ];
 
   return (
-    <div
-      name="Skills"
-      className="  text-white w-full md:h-screen bg-[#e4e0e5]"
-     
-    >
+    <div name="Skills" className="  text-white w-full md:h-screen bg-[#e4e0e5]">
       <div
-       data-aos="fade-up"
+        data-aos="fade-up"
         className=" text-[#60438b] max-w-screen-lg mx-auto p-4 flex flex-col justify-center
        w-full h-full text-white"
       >
         <div className=" text-center pb-8">
-          <p
-            className=" text-4xl md:text-9xl  font-bold border-b-4 border-gray-500 
-          p-2 inline"
-          >
-            Skills
-          </p>
-          <p className="py-6">Tech stack on which I've worked</p>
+          <p className=" text-4xl md:text-9xl  font-bold p-2 inline">Skills</p>
+          <p className="text-[#46424b] py-6">Tech stack on which I've worked</p>
         </div>
 
         <div

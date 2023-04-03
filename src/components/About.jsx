@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "../assets/image32.png";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -25,20 +24,23 @@ export default function About() {
             About
           </p>
         </div>
-        <p className=" text-xl md:text-4xl mt-20">
-          Hey, There I'm Amol Shelke I'm a Front-End Developer.I'm a second year
-          undergraduated student currently pursuing BCA from RTMNU Nagpur
-          university. I have 1 year of experince building delightful websites
-          and designs. I love to work with technologies such as HTML, CSS,
-          JavaScript,React and Most favorite Tailwind❤️. I'm currently looking
-          for an Internship or entry level job, If you have any openings for an
-          intern or any project for me then you can write a message below.
+        <p className="text-[#46424b] text-xl md:text-4xl mt-20">
+          Hello there! I'm a Full Stack Developer with a passion for creating
+          high-quality web applications using the .NET framework. I specialize
+          in both front-end and back-end development, which allows me to create
+          full-fledged web solutions from scratch. <br></br><br></br>
+          I'm a problem-solver at heart and love taking on new challenges. I'm
+          committed to delivering high-quality code that is both maintainable
+          and scalable. I'm a team player and enjoy collaborating with others to
+          deliver the best possible product.
         </p>
         <br />
-        <p className="text-xl">
-          As a self-tought developer I have completed 2 #100daysofcode
-          challenges and created plenty of projects and shared them on Github. I
-          was new back then still I share my all journey on Linkedin.
+        <p className="text-[#46424b] text-xs md:text-xl">
+          If you're looking for a Full Stack Developer who is passionate about
+          building top-notch web solutions, then look no further. Please feel
+          free to reach out to me with any questions or job opportunities by
+          leaving a message below. Thank you for your time, and I look forward
+          to hearing from you soon!
         </p>
       </div>
     </div>

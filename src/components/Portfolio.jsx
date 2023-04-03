@@ -67,12 +67,12 @@ const Portfolio = () => {
       >
         <div
           
-          className=" text-[#60438b]  max-w-screen-lg mb:p-4 mx-auto flex flex-col 
+          className=" text-[#46424b]  max-w-screen-lg mb:p-4 mx-auto flex flex-col 
       justify-center w-full h-full"
         >
           <div data-aos="fade-up" className=" p-5  rounded-md shadow-md bg-form-bg">
             <div className=" text-center pb-8">
-              <p className="  text-4xl md:text-9xl pt-4  font-bold flex items-center justify-center">
+              <p className="  text-[#60438b] text-4xl md:text-9xl pt-4  font-bold flex items-center justify-center">
                 Projects
               </p>
               <p className=" py-4">Check out some of my work here</p>
